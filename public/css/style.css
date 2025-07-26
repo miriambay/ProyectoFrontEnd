@@ -377,7 +377,7 @@ h2 {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .carousel-expe {
     max-width: 100%;
   }
@@ -563,6 +563,20 @@ input[type="reset"]:hover {
   max-width: 100%; 
 }
 
+/* Para el aside cuando el celu está en horizontal */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .aside-title {
+    font-size: 18px;
+    max-width: 90vw;
+  }
+
+  .aside-subtitle {
+    font-size: 14px;
+    max-width: 90vw;
+    overflow-wrap: break-word;
+  }
+}
+	
   /* Footer */
   .footer-container {
   grid-template-columns: 1fr; 
