@@ -2,14 +2,16 @@
 
 /* Estilos generales */
 *{
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Lobster", sans-serif;
     font-size: 18px;
 }
+
 img {
     border-radius: 10px;
     width: 1%;
@@ -223,7 +225,7 @@ h2 {
     max-width: 100%;
   }
 }
-
+/* ASIDE */
 /* Contenedor general del aside */
 .aside-testimonios {
   background-color: #f8f8f8;
@@ -236,15 +238,15 @@ h2 {
 }
 
 /* Titulos principales */
-.aside-title {
-  font-size: 28px;
+.aside-testimonios .aside-title {
+  font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   color: #0f2e37;
   margin-bottom: 8px;
 }
 
-.aside-subtitle {
-  font-size: 18px;
+.aside-testimonios .aside-subtitle {
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   color: #555;
   margin-bottom: 32px;
@@ -414,7 +416,7 @@ h2 {
 .carousel-control-next {
   width: 48px;
 }
-/* COMIENZO ESTILOS FORMULARIO */
+/* FORMULARIO.HTML */
 /* Estilo general del formulario */
 form {
   background-color: #f9f9f9; 
@@ -548,20 +550,48 @@ input[type="reset"]:hover {
 
   /* Aside */
   .aside-testimonios {
-  padding: 24px 16px; 
-  text-align: center;
-}
-
-.aside-title {
-    font-size: 22px;
+    width: 100%;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+  }
+  
+  /* Títulos del aside */
+  .aside-testimonios .aside-title {
+    font-size: 24px;                     /* Ajusta tamaño para pantallas pequeñas */
+    margin: 8px 1px;
   }
 
-.aside-subtitle {
-  font-size: 15px;
-  line-height: 1.6;
-  word-wrap: break-word; /* Por si hay palabras largas que se salen */
-  max-width: 100%; 
+  .aside-testimonios .aside-subtitle {
+    font-size: 20px;
+    margin: 8px 1px;
 }
+
+  /*Cada testimonio centrado*/
+  .testimonio {
+    max-width: 85vw;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .user-img {
+    width: 100px;                      
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    object-fit: cover;
+  }
+
+  .user-comment {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
 
   /* Footer */
   .footer-container {
@@ -643,59 +673,21 @@ input[type="reset"]:hover {
     padding: 16px;
     text-align: center;
   }
+.aside-testimonios .aside-title {
+    font-size: 20px !important;                     /* Ajusta tamaño para pantallas pequeñas */
+    margin: 8px 8px;
+  }
 
+  .aside-testimonios .aside-subtitle {
+    font-size: 16px;
+    margin: 8px 8px;
+  }
   .airbnmi-header img {
     max-width: 140px;     /* Tamaño logo en horizontal */
     margin-bottom: 8px;
   }
-
   .airbnmi-header nav {
     width: 100%;
     margin-top: 8px;
-  }
-
-  /*Aside de testimonios con celu en vertical */
-  .aside-testimonios {
-    width: 100%;
-    padding: 24px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #f8f8f8;
-    box-sizing: border-box;
-  }
-
-  .aside-title {
-    font-size: 18px !important;                     /* Ajusta tamaño para pantallas pequeñas */
-    margin-bottom: 8px;
-  }
-
-  .aside-subtitle {
-    font-size: 14px;
-    margin-bottom: 24px;
-  }
-
-  /*Cada testimonio centrado y adaptado */
-  .testimonio {
-    max-width: 85vw;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .user-img {
-    width: 100px;                      
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 8px;
-    object-fit: cover;
-  }
-
-  .user-comment {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    padding: 0 10px;
-  }
-
+  } 
 }
