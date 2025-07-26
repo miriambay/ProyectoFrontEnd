@@ -566,13 +566,13 @@ input[type="reset"]:hover {
 /* Para el aside cuando el celu está en horizontal */
 @media screen and (max-width: 768px) and (orientation: landscape) {
   .aside-title {
-    font-size: 18px;
-    max-width: 90vw;
+    font-size: 16px;
+    max-width: 80vw;
   }
 
   .aside-subtitle {
-    font-size: 14px;
-    max-width: 90vw;
+    font-size: 12px;
+    max-width: 80vw;
     overflow-wrap: break-word;
   }
 }
