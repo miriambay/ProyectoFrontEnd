@@ -565,22 +565,34 @@ input[type="reset"]:hover {
 
 /* Para el aside cuando el celu está en horizontal */
 @media screen and (max-width: 768px) and (orientation: landscape) {
-
-.aside-testimonios {
-    padding: 28px 20px;
+  .aside-testimonios {
+    padding: 20px 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
+
   .aside-title {
-    font-size: 16px;
-    max-width: 80vw;
+    font-size: 18px;
+    max-width: 90vw;
+    overflow-wrap: break-word;
   }
 
   .aside-subtitle {
-    font-size: 12px;
-    max-width: 80vw;
+    font-size: 14px;
+    max-width: 90vw;
     overflow-wrap: break-word;
   }
+
+  .testimonio-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
 }
+
 	
   /* Footer */
   .footer-container {
