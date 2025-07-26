@@ -667,7 +667,7 @@ input[type="reset"]:hover {
   }
 
   .aside-title {
-    font-size: 20px;                     /* Ajusta tamaño para pantallas pequeñas */
+    font-size: 10px;                     /* Ajusta tamaño para pantallas pequeñas */
     margin-bottom: 8px;
   }
 
