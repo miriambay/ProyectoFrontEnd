@@ -563,37 +563,6 @@ input[type="reset"]:hover {
   max-width: 100%; 
 }
 
-/* Para el aside cuando el celu está en horizontal */
-@media screen and (max-width: 768px) and (orientation: landscape) {
-  .aside-testimonios {
-    padding: 20px 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .aside-title {
-    font-size: 18px;
-    max-width: 90vw;
-    overflow-wrap: break-word;
-  }
-
-  .aside-subtitle {
-    font-size: 14px;
-    max-width: 90vw;
-    overflow-wrap: break-word;
-  }
-
-  .testimonio-img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-}
-
-	
   /* Footer */
   .footer-container {
   grid-template-columns: 1fr; 
@@ -656,4 +625,77 @@ input[type="reset"]:hover {
   .carousel-servis .carousel-item img {
     height: auto;
   }
+}
+
+/* Responsive en celulares horizontal */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+  /*Rompe el grid de dos columnas en el main */
+  main {
+    display: block !important; /* Cambia grid por bloque para que todo se apile */
+  }
+
+  /* Header en horizontal */
+  .airbnmi-header {
+    display: flex !important;            /* Apila el logo y menú */
+    flex-direction: column !important;
+    align-items: center;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .airbnmi-header img {
+    max-width: 140px;     /* Tamaño logo en horizontal */
+    margin-bottom: 8px;
+  }
+
+  .airbnmi-header nav {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  /*Aside de testimonios con celu en vertical */
+  .aside-testimonios {
+    width: 100%;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+  }
+
+  .aside-title {
+    font-size: 24px;                     /* Ajusta tamaño para pantallas pequeñas */
+    margin-bottom: 8px;
+  }
+
+  .aside-subtitle {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  /*Cada testimonio centrado y adaptado */
+  .testimonio {
+    max-width: 85vw;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .user-img {
+    width: 100px;                      
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    object-fit: cover;
+  }
+
+  .user-comment {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
 }
