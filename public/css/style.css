@@ -348,7 +348,7 @@ h2 {
 
 .carousel-expe .carousel-item img {
   width: 100%;
-  height: 360px;
+  height: 540px;
   object-fit: cover;
   display: block;
   border-radius: 0; /* ya lo tiene el contenedor */
@@ -399,7 +399,7 @@ h2 {
 
 .carousel-servis .carousel-item img {
   width: 100%;
-  height: 360px;
+  height: 450px;
   object-fit: cover;
   display: block;
   border-radius: 0; /* ya lo tiene el contenedor */
@@ -691,3 +691,5 @@ input[type="reset"]:hover {
     margin-top: 8px;
   } 
 }
+
+
